@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje Natural con Python - Portafolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .hero .author {
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            font-weight: 300;
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .catalog {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Lenguaje Natural con Python</h1>
+        <p class="author">Realizado por: Angel Jeshua Gutiérrez Roblero</p>
+    </section>
+
+    <div class="container">
+        <div class="catalog">
+            <div class="card">
+                <div class="card-image">🔄</div>
+                <div class="card-content">
+                    <h2 class="card-title">For</h2>
+                    <p class="card-description">Iteración y procesamiento de textos mediante bucles for en Python</p>
+                    <a href=".html">link de prueba</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">📊</div>
+                <div class="card-content">
+                    <h2 class="card-title">Frecuencia</h2>
+                    <p class="card-description">Análisis de frecuencia de palabras y términos en corpus de texto</p>
+                    <a href="Frecuencia.html">link de prueba</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">👋</div>
+                <div class="card-content">
+                    <h2 class="card-title">Hola Mundo</h2>
+                    <p class="card-description">Introducción básica al procesamiento de lenguaje natural</p>
+                    <a href="Hola mundo.html">link de prueba</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">📝</div>
+                <div class="card-content">
+                    <h2 class="card-title">Listas</h2>
+                    <p class="card-description">Manejo de estructuras de datos para almacenar y procesar texto</p>
+                    <a href="Listas.html">link de prueba</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">📏</div>
+                <div class="card-content">
+                    <h2 class="card-title">Longitud</h2>
+                    <p class="card-description">Cálculo y análisis de longitud de cadenas y documentos</p>
+                    <a href="Longitud.html">link de prueba</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">💭</div>
+                <div class="card-content">
+                    <h2 class="card-title">Sentimiento</h2>
+                    <p class="card-description">Análisis de sentimientos y clasificación de polaridad textual</p>
+                    <a href="Sentimiento.html">link de prueba</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">🔤</div>
+                <div class="card-content">
+                    <h2 class="card-title">Tokens</h2>
+                    <p class="card-description">Tokenización y segmentación de texto en unidades procesables</p>
+                    <a href="Tokens.html">link de prueba</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">✂️</div>
+                <div class="card-content">
+                    <h2 class="card-title">PREPROCESAMIENTO</h2>
+                    <p class="card-description"></p>
+                    <a href="preprocesamiento.html">link de prueba</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-content">
+                    <h2 class="card-title">Traductor</h2>
+                    <p class="card-description"></p>
+                    <a href="trad.html">link de prueba</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
